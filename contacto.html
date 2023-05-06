@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Contacto</title>
+		<link rel="stylesheet" href="reset.css/reset.css" />
+		<link rel="stylesheet" href="styles.css" />
+	</head>
+	<body>
+		<header>
+			<div class="caja">
+				<h1><img src="imagenes/logo.png" /></h1>
+
+				<nav>
+					<ul>
+						<li><a href="index.html">Home</a></li>
+						<li><a href="productos.html">Productos</a></li>
+						<li><a href="contacto.html">Contacto</a></li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+
+		<main>
+			<form action="">
+				<!-- El placeholder del input es lo que le da el texto de ejemplo al recuadro, la palabra required nos hace que el navegador nos obligue a llenar el campo en caso de estar vacío -->
+				<label for="nombreApellido">Nombre y Apellido</label>
+				<input type="text" id="nombreApellido" class="inputA" required />
+
+				<label for="correo">Correo Electrónico</label>
+				<input
+					type="email"
+					id="correo"
+					class="inputA"
+					required
+					placeholder="email@dominio.com"
+				/>
+
+				<label for="telefono">Teléfono</label>
+				<input
+					type="tel"
+					id="telefono"
+					class="inputA"
+					required
+					placeholder="(XXX) XXXX XXXX"
+				/>
+
+				<label for="mensaje">Mensaje</label>
+				<textarea
+					id="mensaje"
+					cols="70"
+					rows="10"
+					class="inputA"
+					required
+				></textarea>
+
+				<fieldset>
+					<legend>Cómo le gustaría que lo contactemos?</legend>
+
+					<label for="rcorreo">
+						<input type="radio" name="contacto" id="rcorreo" value="correo" />
+						Email
+					</label>
+
+					<label for="rtelefono">
+						<input
+							type="radio"
+							name="contacto"
+							id="rtelefono"
+							value="telefono"
+						/>
+						Teléfono
+					</label>
+
+					<label for="rwhatsapp">
+						<input
+							type="radio"
+							name="contacto"
+							id="rwhatsapp"
+							value="whatsapp"
+							checked
+						/>
+						Whatsapp
+					</label>
+				</fieldset>
+
+				<fieldset>
+					<legend>En qué horario prefiere ser atendido?</legend>
+
+					<select name="" id="">
+						<option value="">Mañana</option>
+						<option value="">Tarde</option>
+						<option value="">Noche</option>
+					</select>
+				</fieldset>
+
+				<label for="">
+					<input type="checkbox" class="checkbox" id="" checked />
+					Le gustaría recibir novedades de la Barbería Alura?
+				</label>
+
+				<input type="submit" value="Enviar formulario" class="enviar" />
+			</form>
+
+			<table>
+				<thead>
+					<tr>
+						<!-- con esta linea activamos la primera fila -->
+						<th>Día</th>
+						<!-- con esta linea activamos la primera columna de la primera fila -->
+						<th>Horario</th>
+						<!-- con esta la segunda columna de la primera fila -->
+					</tr>
+				</thead>
+
+				<tbody>
+					<tr>
+						<!-- segunda fila -->
+						<td>Lunes</td>
+						<!-- primera columna segunda fila -->
+						<td>08h - 20h</td>
+					</tr>
+
+					<tr>
+						<!-- tercera fila -->
+						<td>Miércoles</td>
+						<td>08h - 20h</td>
+					</tr>
+
+					<tr>
+						<!-- cuarta fila -->
+						<td>Viernes</td>
+						<td>08h - 20h</td>
+					</tr>
+				</tbody>
+			</table>
+		</main>
+
+		<footer>
+			<img src="imagenes/logo-blanco.png" />
+			<p class="copyright">&copy; Copyright Barbería Alura - 2020</p>
+		</footer>
+	</body>
+</html>
