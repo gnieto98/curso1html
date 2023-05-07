@@ -28,7 +28,7 @@ nav a {
 	text-transform: uppercase;
 	color: #000;
 	font-weight: bold;
-	font-size: 22px;
+	font-size: 19px;
 	text-decoration: none;
 }
 
@@ -257,6 +257,8 @@ th {
 
 	nav {
 		position: static;
+		display: flex;
+		justify-content: space-evenly;
 	}
 
 	.caja,
@@ -269,7 +271,10 @@ th {
 		width: auto;
 	}
 
-	.lista,
+	.lista{
+		width: 100%;
+		padding: 0 0 3em;
+	}
 	.imgdif {
 		width: 100%;
 	}
