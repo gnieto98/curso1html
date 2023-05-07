@@ -116,7 +116,7 @@ form legend {
 .enviar {
 	width: 40%;
 	padding: 15px 0;
-	font-size: 18px;
+	font-size: 1em;
 	font-weight: bold;
 	color: white;
 	background-color: orange;
@@ -271,11 +271,24 @@ th {
 		width: auto;
 	}
 
+	.principal,
+	.contenedor,
+	.tarjetas,
+	.centradoPrimero,
+	.video {
+		width: auto;
+		padding: 1em 2em 3em;
+	}
+
 	.lista{
 		width: 100%;
-		padding: 0 0 3em;
+		padding: 0 3em 3em;
 	}
 	.imgdif {
 		width: 100%;
+	}
+
+	.enviar{
+		font-size: 0.8em;
 	}
 }
