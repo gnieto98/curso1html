@@ -249,3 +249,28 @@ th {
 	margin: 0 auto;
 	padding: 40px 0;
 }
+
+@media screen and (max-width: 480px) {
+	h1 {
+		text-align: center;
+	}
+
+	nav {
+		position: static;
+	}
+
+	.caja,
+	.principal,
+	.contenedor-mapa,
+	.contenedor,
+	.tarjetas,
+	.centradoPrimero,
+	.video {
+		width: auto;
+	}
+
+	.lista,
+	.imgdif {
+		width: 100%;
+	}
+}
