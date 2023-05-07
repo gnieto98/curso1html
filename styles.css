@@ -261,6 +261,32 @@ th {
 		justify-content: space-evenly;
 	}
 
+	ul > li > img,
+	.descripcion {
+		width: 100%;
+		font-size: 0.7em;
+	}
+
+	.tarjetas h2 {
+		font-size: 1.2em;
+	}
+	.precio {
+		font-size: 1em;
+	}
+
+	.tarjetas li {
+		width: 60%;
+		display: block;
+		text-align: center;
+		margin: 2em auto;
+		padding: 30px 20px;
+		box-sizing: border-box;
+	}
+
+	.tarjetas li:hover h2 {
+		font-size: 1.7em;
+	}
+
 	.caja,
 	.principal,
 	.contenedor-mapa,
